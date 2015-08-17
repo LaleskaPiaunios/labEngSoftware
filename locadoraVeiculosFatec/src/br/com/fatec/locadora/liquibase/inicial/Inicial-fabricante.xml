@@ -6,13 +6,61 @@
 
 	<changeSet id="10" author="hrichard">
 
+		<createTable tableName="LOC_ACESSORIO">
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
 
+		</createTable><!-- END TABLE ACESSORIO -->
+		
+		<createTable tableName="LOC_CARRO">
+		
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="MODELO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="PLACA" type="java.sql.types.VARCHAR(80)"/>
+			<column name="COR" type="java.sql.types.VARCHAR(80)"/>
+			<column name="ANO_MODELO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="ANO_FABRICANTE" type="java.sql.types.VARCHAR(80)"/>
+			<column name="CARRO_FABRICANTE" type="java.sql.types.BIGINT"/>
+
+		</createTable><!-- END TABLE CARRO -->
+		
+		<createTable tableName="LOC_CLIENTE">
+
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
+			<column name="ENDERECO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="CPF" type="java.sql.types.BIGINT"/>
+			<column name="RG" type="java.sql.types.BIGINT"/>
+
+		</createTable><!-- END TABLE CLIENTE -->
+		
 		<createTable tableName="LOC_FABRICANTE">
 		
 		<column name="ID" type="java.sql.types.BIGINT"/>
 		<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
+		<column name="NACIONALIDADE" type="java.sql.types.VARCHAR(80)"/>
 
-		</createTable>
+		</createTable><!-- END TABLE FABRICANTE -->
+		
+		<createTable tableName="LOC_ID">
+		
+		<column name="ID" type="java.sql.types.BIGINT"/>
+
+		</createTable><!-- END TABLE IDENTIFICADOR -->
+		
+		<createTable tableName="LOC_LOCACAO">
+		
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="DATA_LOCACAO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="DATA_DEV" type="java.sql.types.VARCHAR(80)"/>
+			<column name="KM_INICIAL" type="java.sql.types.VARCHAR(80)"/>
+			<column name="KM_FINAL" type="java.sql.types.VARCHAR(80)"/>
+			<column name="VALOR" type="java.sql.types.VARCHAR(80)"/>
+			<column name="LOCACAO_CLIENTE" type="java.sql.types.VARCHAR(80)"/>
+			<column name="LOCACAO_CARRO" type="java.sql.types.VARCHAR(80)"/>
+
+		</createTable><!-- END TABLE LOCACAO -->
+		
 
 	</changeSet>
 </databaseChangeLog>
