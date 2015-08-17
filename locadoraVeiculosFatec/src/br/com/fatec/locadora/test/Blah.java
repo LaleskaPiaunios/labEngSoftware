@@ -17,19 +17,19 @@ public class Blah {
 	
 	@Test
 	public void testeConnection(){
-		LiquibaseRunnerService.run();
-		
 		Connection conn = null;
 		
 		try {
+			LiquibaseRunnerService.run();
+			
 			conn = DriverManager.getConnection("jdbc:hsqldb:mem:fatec", "SA", "");
 
 			PreparedStatement stmt = conn.prepareStatement("insert into LOC_ACESSORIO values (?,?);");
-			
+	
 			stmt.setLong(1, 10);
 			stmt.setString(2, "Roda de liga leve");
 			
-			stmt.getResultSet();
+			stmt.executeQuery();
 			stmt.execute();
 			
 		} catch (Exception e) {
