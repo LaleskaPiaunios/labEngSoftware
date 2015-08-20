@@ -2,7 +2,7 @@ package br.com.fatec.locadora.api.entity;
 
 import java.sql.Date;
 
-public class Locacao {
+public class Locacao extends IdentificadorLocadora{
 	
 	private Date dataLoc;
 	private Date dataDev;

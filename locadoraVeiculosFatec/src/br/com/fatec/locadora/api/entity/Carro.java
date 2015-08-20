@@ -1,6 +1,6 @@
 package br.com.fatec.locadora.api.entity;
 
-public class Carro {
+public class Carro extends IdentificadorLocadora{
 	
 	private String modelo;
 	private String placa;

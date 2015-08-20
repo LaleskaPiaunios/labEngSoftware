@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="10" author="hrichard">
+
+		<createTable tableName="LOC_LOCACAO">
+		
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="DATA_LOCACAO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="DATA_DEV" type="java.sql.types.VARCHAR(80)"/>
+			<column name="KM_INICIAL" type="java.sql.types.VARCHAR(80)"/>
+			<column name="KM_FINAL" type="java.sql.types.VARCHAR(80)"/>
+			<column name="VALOR" type="java.sql.types.VARCHAR(80)"/>
+			<column name="LOCACAO_CLIENTE" type="java.sql.types.VARCHAR(80)"/>
+			<column name="LOCACAO_CARRO" type="java.sql.types.VARCHAR(80)"/>
+
+		</createTable><!-- END TABLE LOCACAO -->
+		
+		
+		<insert tableName="LOC_LOCACAO">
+			
+			<column name="ID">01</column>
+			<column name="DATA_LOCACAO">12/04/2015</column>
+			<column name="DATA_DEV">12/05/2015</column>
+			<column name="KM_INICIAL">0</column>
+			<column name="KM_FINAL">100</column>
+			<column name="VALOR">550</column>
+			<column name="LOCACAO_CLIENTE">01</column>
+			<column name="LOCACAO_CARRO">01</column>
+		
+		</insert>
+		
+
+	</changeSet>
+</databaseChangeLog>

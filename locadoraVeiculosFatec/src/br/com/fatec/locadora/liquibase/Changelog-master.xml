@@ -4,5 +4,12 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
+<include file="br/com/fatec/locadora/liquibase/inicial/Inicial-acessorio.xml"/>
+<include file="br/com/fatec/locadora/liquibase/inicial/Inicial-carro.xml"/>
+<include file="br/com/fatec/locadora/liquibase/inicial/Inicial-cliente.xml"/>
 <include file="br/com/fatec/locadora/liquibase/inicial/Inicial-fabricante.xml"/>
+
+
+<include file="br/com/fatec/locadora/liquibase/inicial/Inicial-locacao.xml"/>
+<include file="br/com/fatec/locadora/liquibase/inicial/Inicial-sistema.xml"/>
 </databaseChangeLog>

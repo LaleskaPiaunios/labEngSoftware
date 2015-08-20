@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="10" author="hrichard">
+		
+		<createTable tableName="LOC_CARRO">
+		
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="MODELO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="PLACA" type="java.sql.types.VARCHAR(80)"/>
+			<column name="COR" type="java.sql.types.VARCHAR(80)"/>
+			<column name="ANO_MODELO" type="java.sql.types.VARCHAR(80)"/>
+			<column name="ANO_FABRICANTE" type="java.sql.types.VARCHAR(80)"/>
+			<column name="CARRO_FABRICANTE" type="java.sql.types.BIGINT"/>
+
+		</createTable><!-- END TABLE CARRO -->
+		
+		<insert tableName="LOC_CARRO">
+			
+			<column name="ID">01</column>
+			<column name="MODELO">Palio Weekend</column>
+			<column name="PLACA">CPD0005</column>
+			<column name="COR">Amarelo</column>
+			<column name="ANO_MODELO">2015</column>
+			<column name="ANO_FABRICANTE">2014</column>
+			<column name="CARRO_FABRICANTE">FIAT</column>
+		
+		</insert>
+		
+
+	</changeSet>
+</databaseChangeLog>

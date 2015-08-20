@@ -1,6 +1,6 @@
 package br.com.fatec.locadora.api.entity;
 
-public class Cliente {
+public class Cliente extends IdentificadorLocadora{
 	
 	private String nome;
 	private String endereco;

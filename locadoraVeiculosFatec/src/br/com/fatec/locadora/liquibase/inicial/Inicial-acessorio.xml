@@ -5,24 +5,20 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 	<changeSet id="10" author="hrichard">
-		
-		<createTable tableName="LOC_FABRICANTE">
-		
-		<column name="ID" type="java.sql.types.BIGINT"/>
-		<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
-		<column name="NACIONALIDADE" type="java.sql.types.VARCHAR(80)"/>
 
-		</createTable><!-- END TABLE FABRICANTE -->
+		<createTable tableName="LOC_ACESSORIO">
+			<column name="ID" type="java.sql.types.BIGINT"/>
+			<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
+
+		</createTable><!-- END TABLE ACESSORIO -->
 		
-		<insert tableName="LOC_FABRICANTE">
+		<insert tableName="LOC_ACESSORIO">
 			
 			<column name="ID">01</column>
-			<column name="NOME">Fiat</column>
-			<column name="NACIONALIDADE">Brasileira</column>
+			<column name="NOME">Vidro</column>
 			
+		
 		</insert>
 		
-		
-
 	</changeSet>
 </databaseChangeLog>

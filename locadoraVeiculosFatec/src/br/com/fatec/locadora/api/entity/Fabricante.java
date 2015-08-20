@@ -1,6 +1,6 @@
 package br.com.fatec.locadora.api.entity;
 
-public class Fabricante {
+public class Fabricante extends IdentificadorLocadora{
 	
 	private String nome;
 	private String nacionalidade;
