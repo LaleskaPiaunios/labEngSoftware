@@ -9,8 +9,10 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="G:/FATEC/dependencies/guava-18.0.jar"/>
-	<classpathentry kind="lib" path="G:/FATEC/dependencies/hsqldb.jar"/>
-	<classpathentry kind="lib" path="G:/FATEC/dependencies/liquibase_3_4_1.jar"/>
+	<classpathentry kind="lib" path="G:/AULA-27-08-2015/dependencies/commons-dbutils-1.6.jar"/>
+	<classpathentry kind="lib" path="G:/AULA-27-08-2015/dependencies/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="G:/AULA-27-08-2015/dependencies/hsqldb.jar"/>
+	<classpathentry kind="lib" path="G:/AULA-27-08-2015/dependencies/liquibase_3_4_1.jar"/>
+	<classpathentry kind="lib" path="G:/AULA-27-08-2015/dependencies/mini-spring-1.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
