@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="60" author="junio">
+	<changeSet id="60" author="Hugo">
 		<createTable tableName="GERADOR_IDS">
 			<column name="next_id" type="java.sql.Types.BIGINT" />
 			<column name="table_name" type="java.sql.Types.VARCHAR(30)" />

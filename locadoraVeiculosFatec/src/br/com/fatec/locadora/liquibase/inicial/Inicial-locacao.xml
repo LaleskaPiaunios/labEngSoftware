@@ -4,17 +4,30 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="20" author="junio">
+	<changeSet id="20" author="Hugo">
 		<createTable tableName="LOC_LOCACAO">
-			<column name="data_locacao" type="java.sql.Types.VARCHAR(200)" />
-			<column name="data_devolucao" type="java.sql.Types.VARCHAR(200)" />
-			<column name="km_inicial" type="java.sql.Types.BIGINT" />
-			<column name="km_final" type="java.sql.Types.BIGINT" />
-			<column name="cliente" type="java.sql.Types.VARCHAR(200)" />
-			<column name="valor" type="java.sql.Types.BIGINT" />
-			<column name="carro" type="java.sql.Types.VARCHAR(200)" />
+			<column name="DATA_LOCACAO" type="java.sql.Types.VARCHAR(200)" />
+			<column name="DATA_DEVOLUCAO" type="java.sql.Types.VARCHAR(200)" />
+			<column name="KM_INICIAL" type="java.sql.Types.BIGINT" />
+			<column name="KM_FINAL" type="java.sql.Types.BIGINT" />
+			<column name="CLIENTE" type="java.sql.Types.VARCHAR(200)" />
+			<column name="VALOR" type="java.sql.Types.BIGINT" />
+			<column name="CARRO" type="java.sql.Types.VARCHAR(200)" />
 		</createTable>
 
+
+		<insert tableName="LOC_LOCACAO">
+			
+			<column name="DATA_LOCACAO">12/03/2015</column>
+			<column name="DATA_DEVOLUCAO">15/03/2015</column>
+			<column name="KM_INICIAL">200</column>
+			<column name="KM_FINAL">350</column>
+			<column name="CLIENTE">Fulano de Tal</column>
+			<column name="VALOR">500</column>
+			<column name="CARRO">FORD FIESTA</column>
+		
+		</insert>
+		
 	</changeSet>
 
 </databaseChangeLog>

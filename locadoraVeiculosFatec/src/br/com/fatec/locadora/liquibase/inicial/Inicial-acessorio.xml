@@ -4,12 +4,23 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="50" author="junio">
+	<changeSet id="50" author="Hugo">
 		<createTable tableName="LOC_ACESSORIO">
-			<column name="id" type="java.sql.Types.BIGINT"/>
-			<column name="nome" type="java.sql.Types.VARCHAR(200)" />
+			<column name="ID" type="java.sql.Types.BIGINT"/>
+			<column name="NOME" type="java.sql.Types.VARCHAR(200)" />
 		</createTable>
 
+	
+		<insert tableName="LOC_ACESSORIO">
+			
+			<column name="ID">01</column>
+			<column name="NOME">Vidro Eletrico</column>
+		
+		</insert>
+	
+	
 	</changeSet>
+	
+	
 
 </databaseChangeLog>
