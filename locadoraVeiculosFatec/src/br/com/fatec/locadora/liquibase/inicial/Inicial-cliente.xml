@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="10" author="hrichard">
-		
+	<changeSet id="30" author="junio">
 		<createTable tableName="LOC_CLIENTE">
-
-			<column name="ID" type="java.sql.types.BIGINT"/>
-			<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
-			<column name="ENDERECO" type="java.sql.types.VARCHAR(80)"/>
-			<column name="CPF" type="java.sql.types.BIGINT"/>
-			<column name="RG" type="java.sql.types.BIGINT"/>
-
-		</createTable><!-- END TABLE CLIENTE -->
-		
-		
-		<insert tableName="LOC_CLIENTE">
-			
-			<column name="ID" >01</column>
-			<column name="NOME" >Hugo</column>
-			<column name="ENDERECO" >Rua Nassau</column>
-			<column name="CPF" >06986270402</column>
-			<column name="RG" >525675711</column>
-		
-		</insert>
+			<column name="nome" type="java.sql.Types.VARCHAR(200)" />
+			<column name="cpf" type="java.sql.Types.VARCHAR(200)" />
+			<column name="rg" type="java.sql.Types.VARCHAR(200)" />
+			<column name="telefone" type="java.sql.Types.VARCAHR(200)" />
+			<column name="endereco" type="java.sql.Types.VARCHAR(200)" />
+		</createTable>
 
 	</changeSet>
+
 </databaseChangeLog>

@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="10" author="hrichard">
-
-		
+	<changeSet id="60" author="junio">
 		<createTable tableName="GERADOR_IDS">
-		
-			<column name="NEXT_ID" type="java.sql.types.BIGINT"/>
-			<column name="TABLE_NAME" type="java.sql.types.VARCHAR(30)"/>
+			<column name="next_id" type="java.sql.Types.BIGINT" />
+			<column name="table_name" type="java.sql.Types.VARCHAR(30)" />
+		</createTable>
 
-		</createTable><!-- END TABLE GERADOR_IDS -->
-		
 		<insert tableName="GERADOR_IDS">
-			
-			<column name="NEXT_IDS">01</column>
-		
+			<column name="next_id">1</column>
+			<column name="table_name">LOC_CARRO</column>
 		</insert>
 		
+		<insert tableName="GERADOR_IDS">
+			<column name="next_id">1</column>
+			<column name="table_name">LOC_ACESSORIO</column>
+		</insert>
 		
+		<insert tableName="GERADOR_IDS">
+			<column name="next_id">1</column>
+			<column name="table_name">LOC_CLIENTE</column>
+		</insert>
+		
+		<insert tableName="GERADOR_IDS">
+			<column name="next_id">1</column>
+			<column name="table_name">LOC_FABRICANTE</column>
+		</insert>
+		
+		<insert tableName="GERADOR_IDS">
+			<column name="next_id">1</column>
+			<column name="table_name">LOC_LOCACAO</column>
+		</insert>
+
 
 	</changeSet>
+
 </databaseChangeLog>

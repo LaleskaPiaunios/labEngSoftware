@@ -3,9 +3,21 @@ package br.com.fatec.locadora.api.entity;
 public class Cliente extends IdentificadorLocadora{
 	
 	private String nome;
-	private String endereco;
 	private Integer cpf;
 	private Integer rg;
+	private String telefone;
+	private String endereco;
+	
+	public static String col_nome = "nome";
+	public static String col_cpf = "cpf";
+	public static String col_rg = "rg";
+	public static String col_telefone = "telefone";
+	public static String col_endereco = "endereco";
+	public static String table_name = "LOC_CLIENTE";
+	
+	
+	
+	
 	public String getNome() {
 		return nome;
 	}
@@ -29,6 +41,12 @@ public class Cliente extends IdentificadorLocadora{
 	}
 	public void setRg(Integer rg) {
 		this.rg = rg;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 	
 

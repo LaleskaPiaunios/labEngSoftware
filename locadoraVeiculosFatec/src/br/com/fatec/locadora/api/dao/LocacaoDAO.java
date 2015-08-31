@@ -7,13 +7,15 @@ import br.com.fatec.locadora.api.entity.Locacao;
 public interface LocacaoDAO {
 	
 	
-	Locacao save(Locacao e);
-	Locacao findBy(Long id);
+	public Locacao save(Locacao e);
 	
-	List<Locacao> findAll();
+	public Locacao findBy(Long id);
 	
-	Locacao update(Locacao e);
-	Locacao delete(Locacao e);
+	public List<Locacao> findAll();
+	
+	public Locacao update(Locacao e);
+	
+	public Boolean delete(Locacao e);
 	
 
 }

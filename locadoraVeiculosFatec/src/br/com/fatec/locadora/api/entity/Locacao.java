@@ -8,10 +8,20 @@ public class Locacao extends IdentificadorLocadora{
 	private Date dataDev;
 	private Double kmInicial;
 	private Double kmFinal;
-	private Double valor;
-	
-	private Long cliente;
+	private String cliente;
+	private Long valor;
 	private Long carro;
+	
+	
+	public static String col_data_locacao = "dataLoc";
+	public static String col_data_devolucao = "dataDev";
+	public static String col_km_inicial = "kmInicial";
+	public static String col_km_final = "kmFinal";
+	public static String col_cliente = "cliente";
+	public static String col_valor = "valor";
+	public static String col_carro = "carro";
+	
+	public static String table_name = "LOC_LOCACAO";
 	
 	
 	public Date getDataLoc() {
@@ -38,16 +48,16 @@ public class Locacao extends IdentificadorLocadora{
 	public void setKmFinal(Double kmFinal) {
 		this.kmFinal = kmFinal;
 	}
-	public Double getValor() {
+	public Long getValor() {
 		return valor;
 	}
-	public void setValor(Double valor) {
+	public void setValor(Long valor) {
 		this.valor = valor;
 	}
-	public Long getCliente() {
+	public String getCliente() {
 		return cliente;
 	}
-	public void setCliente(Long cliente) {
+	public void setCliente(String cliente) {
 		this.cliente = cliente;
 	}
 	public Long getCarro() {

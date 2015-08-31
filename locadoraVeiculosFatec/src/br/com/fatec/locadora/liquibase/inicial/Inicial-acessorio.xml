@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ../dbchangelog-3.4.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<changeSet id="10" author="hrichard">
-
+	<changeSet id="50" author="junio">
 		<createTable tableName="LOC_ACESSORIO">
-			<column name="ID" type="java.sql.types.BIGINT"/>
-			<column name="NOME" type="java.sql.types.VARCHAR(80)"/>
+			<column name="id" type="java.sql.Types.BIGINT"/>
+			<column name="nome" type="java.sql.Types.VARCHAR(200)" />
+		</createTable>
 
-		</createTable><!-- END TABLE ACESSORIO -->
-		
-		<insert tableName="LOC_ACESSORIO">
-			
-			<column name="ID">01</column>
-			<column name="NOME">Vidro</column>
-			
-		
-		</insert>
-		
 	</changeSet>
+
 </databaseChangeLog>

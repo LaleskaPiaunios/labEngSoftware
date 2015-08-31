@@ -6,13 +6,15 @@ import br.com.fatec.locadora.api.entity.Fabricante;
 
 public interface FabricanteDAO {
 	
-	Fabricante save(Fabricante e);
-	Fabricante findBy(Long id);
+	public Fabricante save(Fabricante e);
 	
-	List<Fabricante> findAll();
+	public Fabricante findBy(Long id);
 	
-	Fabricante update(Fabricante e);
-	Fabricante delete(Fabricante e);
+	public List<Fabricante> findAll();
+	
+	public Fabricante update(Fabricante e);
+	
+	public Boolean delete(Fabricante e);
 	
 
 }

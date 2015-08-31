@@ -7,13 +7,15 @@ import br.com.fatec.locadora.api.entity.Acessorio;
 
 public interface AcessorioDAO {
 	
-	Acessorio save(Acessorio e);
-	Acessorio findBy(Long id);
+	public Acessorio save(Acessorio e);
 	
-	List<Acessorio> findAll();
+	public Acessorio findBy(Long id);
 	
-	Acessorio update(Acessorio e);
-	Acessorio delete(Acessorio e);
+	public List<Acessorio> findAll();
+	
+	public Acessorio update(Acessorio e);
+	
+	public Boolean delete(Acessorio e);
 	
 	
 

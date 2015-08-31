@@ -6,12 +6,14 @@ import br.com.fatec.locadora.api.entity.Cliente;
 
 public interface ClienteDAO {
 	
-	Cliente save(Cliente e);
-	Cliente findBy(Long id);
+	public Cliente save(Cliente e);
 	
-	List<Cliente> findAll();
+	public Cliente findBy(Long id);
 	
-	Cliente update(Cliente e);
-	Cliente delete(Cliente e);
+	public List<Cliente> findAll();
+	
+	public Cliente update(Cliente e);
+	
+	public Boolean delete(Cliente e);
 
 }

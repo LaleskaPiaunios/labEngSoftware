@@ -4,6 +4,11 @@ public class Fabricante extends IdentificadorLocadora{
 	
 	private String nome;
 	private String nacionalidade;
+	
+	public static String col_nome = "nome";
+	public static String col_nacionalidade = "nacionalidade";
+	public static String table_name = "LOC_FABRICANTE";
+	
 	public String getNome() {
 		return nome;
 	}

@@ -7,13 +7,15 @@ import br.com.fatec.locadora.api.entity.Carro;
 public interface CarroDAO {
 	
 	
-	Carro save(Carro e);
-	Carro findBy(Long id);
+	public Carro save(Carro e);
 	
-	List<Carro> findAll();
+	public Carro findBy(Long id);
 	
-	Carro update(Carro e);
-	Carro delete(Carro e);
+	public List<Carro> findAll();
+	
+	public Carro update(Carro e);
+	
+	public Boolean delete(Carro e);
 	
 	
 
